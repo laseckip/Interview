@@ -2,7 +2,7 @@ import { Endpoints } from './endpoints';
 
 
 export class PetsApi {
-    private endpoints;
+    private endpoints: any;
 
     constructor(private request: any) {
         this.request = request;

@@ -28,9 +28,4 @@ export class GooglePage {
     async clickWikipediaLink() {
         await this.wikipediaLink.click();
     }
-
-
-
-
-
 }

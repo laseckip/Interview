@@ -2,8 +2,8 @@ import { Endpoints } from './endpoints';
 
 
 export class UserApi {
-    private endpoints;
-    private userDetails;
+    private endpoints: any;
+    private userDetails: any;
 
     constructor(private request: any, userDetails: any) {
         this.request = request;
@@ -31,7 +31,6 @@ export class UserApi {
                 "Authorization": "Basic special-key",
             }
         });
-
 
         return getUserResponse;
     }
