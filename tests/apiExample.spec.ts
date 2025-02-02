@@ -26,6 +26,7 @@ test('create user and verify', async({request}) => {
     console.log(await getUserResponse.json());
 });
 
+
 test('sold pets calculation', async({ request}) => {
     const petsApi = new PetsApi(request);
     const soldPetsResponse = await petsApi.getSoldPets();
@@ -36,7 +37,7 @@ test('sold pets calculation', async({ request}) => {
     console.log(soldPetsBody);
 
     const soldPetsFormatted = petsApi.formatPetsResponse(soldPetsBody);
-    console.log("soldPets - formatted");
+    console.log("soldPets - formatted in tuple array");
     console.log(soldPetsFormatted);
 
 

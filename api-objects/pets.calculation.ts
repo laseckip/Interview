@@ -17,7 +17,6 @@ export class PetsCalculation {
             } else {
                 numberOfSoldPets.set(petName, currentNumber + 1);
             }
-
         });
 
         return numberOfSoldPets;
