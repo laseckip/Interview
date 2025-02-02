@@ -22,8 +22,9 @@ test('create user and verify', async({request}) => {
     expect(createUserResponse.ok()).toBeTruthy();
     const getUserResponse = await userApi.getExistingUser();
     expect(getUserResponse.ok()).toBeTruthy();
+    console.log("User data retrieved")
+    console.log(await getUserResponse.json());
 });
-
 
 test('sold pets calculation', async({ request}) => {
     const petsApi = new PetsApi(request);
