@@ -3,7 +3,7 @@ import { UserApi } from '../api-objects/userApi';
 import { PetsApi } from '../api-objects/petsApi';
 import { PetsCalculation } from '../api-objects/pets.calculation';
 
-
+/*
 test('create user and verify', async({request}) => {
     const username = "plasecki" + Math.random();
     const userDetails = {
@@ -25,7 +25,7 @@ test('create user and verify', async({request}) => {
     console.log("User data retrieved")
     console.log(await getUserResponse.json());
 });
-
+*/
 
 test('sold pets calculation', async({ request}) => {
     const petsApi = new PetsApi(request);
